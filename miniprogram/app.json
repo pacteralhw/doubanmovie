@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/movie/movie", 
+    "pages/comment/comment", 
+    "pages/profile/profile", 
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1C86EE",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "black"
+  },
+"tabBar": {
+  "color": "#050505",
+  "selectedColor": "#00008B",
+  "backgroundColor": "#1C86EE",
+  "list": [{
+    "pagePath": "pages/movie/movie",
+    "text": "电影",
+    "iconPath":"images/movie.png",
+    "selectedIconPath":"images/movie-selected.png"
+  }, {
+    "pagePath": "pages/profile/profile",
+    "text": "我的",
+    "iconPath":"images/profile.png",
+    "selectedIconPath":"images/profile-selected.png"
+  }]
+},
+"usingComponents": {
+    "van-button": "@vant/weapp/button",
+    "van-field": "@vant/weapp/field",
+    "van-rate": "@vant/weapp/rate"
+},
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

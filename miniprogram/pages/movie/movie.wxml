@@ -1,0 +1,22 @@
+<!--pages/movie/movie.wxml-->
+<view class="movie" wx:for="{{movieList}}" wx:key="id">
+	<image class="movie-img" src="{{item.images.small}}"></image>
+	<view class="movie-info">
+		<view class=".movie-title">
+			<text class=".movie-title">{{item.title}}</text>
+		</view>
+		<view class=".movie-info">类型:
+			<text class=".movie-info">{{item.genres}}</text>
+		</view>
+		<view class=".movie-info">主演:
+			<text  wx:for="{{item.casts}}" wx:key="id">{{item.name}} </text>
+		</view>
+		<view class=".movie-info">上映(大陆):
+			<text class=".movie-info">{{item.mainland_pubdate}}</text>
+		</view>
+		<view class=".movie-info">评分:
+			<text class=".movie-score">{{item.rating.average}}</text>
+		</view>
+		<van-button bindtap="gotoComment" data-movieid="{{item.id}}"  type="danger"  size="normal">评价</van-button>
+	</view>
+</view>
